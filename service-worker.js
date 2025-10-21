@@ -4,7 +4,6 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/about.html',
-  '/education.html',
   '/skills.html',
   '/contact.html',
   '/assets/css/style.css',
@@ -64,4 +63,5 @@ self.addEventListener('activate', event => {
       );
     })
   );
+
 });
