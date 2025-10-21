@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentang Siti Faradilla Putri - Mahasiswa Teknik Informatika dengan konsentrasi Artificial Intelligence">
+    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Siti Faradilla Putri">
+    <meta name="author" content="Siti Faradilla Putri">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="web.webmanifest">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/pwa-icon.svg">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- Title -->
+    <title>Tentang Saya - Siti Faradilla Putri</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="ai-core-loader">
+            <div class="core-pulse"></div>
+            <div class="core-inner"></div>
+        </div>
+        <p class="loading-text">Memuat profil...</p>
+    </div>
+    
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Matrix Background Effect -->
+    <canvas id="matrix-bg"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI<span>.</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="education.html" class="nav-link">Pendidikan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Keahlian</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-down">Tentang Saya</h1>
+            
+            <div class="about-content-wrapper">
+                <div class="profile-card glass-card" data-aos="fade-right">
+                    <div class="profile-header">
+                        <div class="profile-img-wrapper">
+                            <img src="raya.jpg" alt="Siti Faradilla Putri" class="profile-img-about">
+                        </div>
+                        <div class="profile-info">
+                            <h2>Siti Faradilla Putri</h2>
+                            <p class="title">Mahasiswa Teknik Informatika - AI Specialist</p>
+                            <div class="social-links">
+                                <a href="mailto:2210031802102@sar.ac.id"><i class="fas fa-envelope"></i></a>
+                                <a href="https://wa.me/6282387792165"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <div class="detail-row">
+                            <span class="label">NIM:</span>
+                            <span class="value">2210031802102</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Program Studi:</span>
+                            <span class="value">Teknik Informatika</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Konsentrasi:</span>
+                            <span class="value">Artificial Intelligence (AI)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Universitas:</span>
+                            <span class="value">Universitas Sains dan Teknologi Indonesia (USTI)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Email Akademik:</span>
+                            <span class="value">2210031802102@sar.ac.id</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Nomor Telepon:</span>
+                            <span class="value">+62 823-8779-2165</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Status:</span>
+                            <span class="value">Mahasiswa Aktif</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Angkatan:</span>
+                            <span class="value">2022</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Lokasi Kampus:</span>
+                            <span class="value">Riau, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-description" data-aos="fade-left">
+                    <div class="glass-card">
+                        <h3>Tentang Saya</h3>
+                        <p>
+                            Halo! Saya Siti Faradilla Putri, seorang mahasiswa aktif di Program Studi Teknik Informatika 
+                            dengan konsentrasi Artificial Intelligence di Universitas Sains dan Teknologi Indonesia (USTI). 
+                            Saya memiliki ketertarikan yang mendalam pada dunia teknologi, khususnya dalam bidang kecerdasan buatan.
+                        </p>
+                        <p>
+                            Sejak awal studi saya, saya telah memfokuskan diri pada pengembangan keahlian dalam machine learning, 
+                            deep learning, dan data science. Saya percaya bahwa teknologi AI akan menjadi bagian integral dalam 
+                            memecahkan berbagai tantangan kompleks di masa depan.
+                        </p>
+                        <p>
+                            Melalui website ini, saya ingin membagikan perjalanan pembelajaran saya, proyek-proyek yang sedang 
+                            saya kerjakan, serta wawasan mengenai perkembangan terbaru dalam dunia AI. Saya berharap dapat 
+                            berkontribusi pada kemajuan teknologi di Indonesia melalui penerapan kecerdasan buatan yang bertanggung jawab.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Visi Saya</h3>
+                        <p>
+                            Menjadi seorang ahli AI yang berkontribusi dalam pengembangan solusi teknologi inovatif untuk 
+                            meningkatkan kualitas hidup masyarakat dan memajukan industri teknologi di Indonesia.
+                        </p>
+                    </div>
+                    
+                    <div class="interests-grid" data-aos="fade-up" data-aos-delay="400">
+                        <div class="interest-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Machine Learning</h4>
+                        </div>
+                        <div class="interest-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>Deep Learning</h4>
+                        </div>
+                        <div class="interest-card">
+                            <i class="fas fa-database"></i>
+                            <h4>Data Science</h4>
+                        </div>
+                        <div class="interest-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Big Data Analytics</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Siti Faradilla Putri</h3>
+                    <p>Mahasiswa Teknik Informatika - AI Specialist</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:2210031802102@sar.ac.id"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6282387792165"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Siti Faradilla Putri. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Matrix Background Script -->
+    <script>
+        // Matrix background effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('matrix-bg');
+            if (!canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            // Characters for matrix effect
+            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@%&*";
+            const charArray = chars.split("");
+            
+            const fontSize = 14;
+            const columns = canvas.width / fontSize;
+            
+            // Array to store drop positions
+            const drops = [];
+            for (let i = 0; i < columns; i++) {
+                drops[i] = Math.floor(Math.random() * canvas.height / fontSize);
+            }
+            
+            // Draw function
+            function draw() {
+                // Semi-transparent black to create trail effect
+                ctx.fillStyle = 'rgba(10, 10, 26, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = '#00f3ff';
+                ctx.font = `${fontSize}px monospace`;
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = charArray[Math.floor(Math.random() * charArray.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    
+                    // Reset drop if it reaches bottom or randomly
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    
+                    drops[i]++;
+                }
+            }
+            
+            // Animation loop
+            setInterval(draw, 33);
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        });
+    </script>
+    
+    <!-- Register Service Worker for PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

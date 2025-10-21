@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Pribadi Siti Faradilla Putri - Mahasiswa Teknik Informatika dengan konsentrasi Artificial Intelligence">
+    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Siti Faradilla Putri">
+    <meta name="author" content="Siti Faradilla Putri">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="web.webmanifest">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/pwa-icon.svg">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- Title -->
+    <title>Siti Faradilla Putri - Profil AI</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="ai-core-loader">
+            <div class="core-pulse"></div>
+            <div class="core-inner"></div>
+        </div>
+        <p class="loading-text">Menginisialisasi sistem AI...</p>
+    </div>
+    
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI<span>.</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="education.html" class="nav-link">Pendidikan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Keahlian</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="profile-img-container">
+                    <img src="raya.jpg" alt="Siti Faradilla Putri" class="profile-img">
+                    <div class="ai-overlay">
+                        <canvas id="ai-brain-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <h1 class="hero-title">
+                    <span class="typewriter">Siti Faradilla Putri</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Mahasiswa Teknik Informatika — Konsentrasi Artificial Intelligence (USTI)
+                </p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">Lihat Profil</a>
+                    <a href="contact.html" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating 3D Elements -->
+        <div class="floating-elements">
+            <div class="floating-box box-1"></div>
+            <div class="floating-box box-2"></div>
+            <div class="floating-box box-3"></div>
+        </div>
+    </section>
+    
+    <!-- About Preview Section -->
+    <section class="about-preview" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Siti Faradilla Putri</h3>
+                    <p>
+                        Halo, saya Siti Faradilla Putri, mahasiswa aktif Teknik Informatika di Universitas Sains dan Teknologi Indonesia (USTI), 
+                        dengan konsentrasi pada Artificial Intelligence (AI). Saya memiliki minat yang mendalam terhadap machine learning, 
+                        deep learning, dan teknologi masa depan. Website ini dirancang sebagai representasi digital diri saya — futuristik, 
+                        interaktif, dan mencerminkan dunia AI yang terus berkembang.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card" data-aos="zoom-in">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Teknik Informatika</h3>
+                            <p>Program Studi</p>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-brain"></i>
+                            <h3>Artificial Intelligence</h3>
+                            <p>Konsentrasi</p>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-university"></i>
+                            <h3>USTI</h3>
+                            <p>Universitas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="tech-stack">
+                        <h3>Teknologi AI Favorit</h3>
+                        <div class="tech-icons">
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fas fa-brain" title="TensorFlow"></i>
+                            <i class="fas fa-chart-network" title="Neural Networks"></i>
+                            <i class="fas fa-robot" title="Machine Learning"></i>
+                            <i class="fas fa-database" title="Data Science"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Siti Faradilla Putri</h3>
+                    <p>Mahasiswa Teknik Informatika - AI Specialist</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:2210031802102@sar.ac.id"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6282387792165"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Siti Faradilla Putri. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+    
+    <!-- Register Service Worker for PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

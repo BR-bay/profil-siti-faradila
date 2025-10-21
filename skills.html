@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keahlian Siti Faradilla Putri - Kompetensi dalam Artificial Intelligence dan Data Science">
+    <meta name="keywords" content="AI, Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Python, TensorFlow, Siti Faradilla Putri">
+    <meta name="author" content="Siti Faradilla Putri">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="web.webmanifest">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/pwa-icon.svg">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    
+    <!-- Title -->
+    <title>Keahlian - Siti Faradilla Putri</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="ai-core-loader">
+            <div class="core-pulse"></div>
+            <div class="core-inner"></div>
+        </div>
+        <p class="loading-text">Memuat keahlian...</p>
+    </div>
+    
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Neural Network Background -->
+    <div id="neural-network-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI<span>.</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="education.html" class="nav-link">Pendidikan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link active">Keahlian</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-down">Keahlian & AI Focus</h1>
+            
+            <div class="skills-intro" data-aos="fade-up">
+                <p>
+                    Berikut adalah kompetensi teknis dan keahlian yang saya kuasai dalam bidang Artificial Intelligence 
+                    dan Data Science. Saya terus mengembangkan kemampuan ini melalui pembelajaran mandiri dan proyek praktis.
+                </p>
+            </div>
+            
+            <div class="skills-categories">
+                <div class="category" data-aos="fade-right">
+                    <h2 class="category-title">Machine Learning & AI</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Machine Learning</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90">
+                                    <span class="progress-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Deep Learning</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85">
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>Neural Networks</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80">
+                                    <span class="progress-text">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>Natural Language Processing</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75">
+                                    <span class="progress-text">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category" data-aos="fade-left">
+                    <h2 class="category-title">Data Science & Analytics</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Data Analysis</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95">
+                                    <span class="progress-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Data Visualization</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90">
+                                    <span class="progress-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <h3>Statistical Modeling</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85">
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Big Data</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70">
+                                    <span class="progress-text">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category" data-aos="fade-right">
+                    <h2 class="category-title">Programming & Tools</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3>Python</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95">
+                                    <span class="progress-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>TensorFlow</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85">
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3>Scikit-learn</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90">
+                                    <span class="progress-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>SQL</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80">
+                                    <span class="progress-text">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category" data-aos="fade-left">
+                    <h2 class="category-title">Teknologi Pendukung</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3>Git & GitHub</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85">
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML/CSS</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90">
+                                    <span class="progress-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75">
+                                    <span class="progress-text">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>RESTful APIs</h3>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70">
+                                    <span class="progress-text">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-summary" data-aos="fade-up">
+                <h2 class="summary-title">Ringkasan Kompetensi</h2>
+                <div class="summary-content">
+                    <p>
+                        Dengan fokus pada Artificial Intelligence, saya telah mengembangkan keahlian komprehensif dalam 
+                        berbagai teknologi dan metodologi yang relevan. Saya mampu menerapkan algoritma machine learning 
+                        untuk menyelesaikan masalah kompleks, melakukan analisis data untuk menghasilkan wawasan yang berharga, 
+                        dan mengembangkan solusi AI yang dapat diimplementasikan dalam berbagai domain.
+                    </p>
+                    <p>
+                        Pendekatan saya terhadap pengembangan keahlian adalah berkelanjutan dan praktis, dengan selalu 
+                        mengikuti perkembangan terbaru dalam bidang AI dan menerapkannya dalam proyek-proyek nyata.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Siti Faradilla Putri</h3>
+                    <p>Mahasiswa Teknik Informatika - AI Specialist</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:2210031802102@sar.ac.id"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6282387792165"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Siti Faradilla Putri. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Neural Network Background Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('neural-network-bg');
+            if (!container) return;
+            
+            // Create neural network visualization
+            function createNeuralNetwork() {
+                container.innerHTML = '';
+                
+                // Create nodes
+                const nodes = [];
+                const nodeCount = 30;
+                
+                for (let i = 0; i < nodeCount; i++) {
+                    const node = document.createElement('div');
+                    node.className = 'nn-node';
+                    node.style.left = `${Math.random() * 100}%`;
+                    node.style.top = `${Math.random() * 100}%`;
+                    node.style.animationDelay = `${Math.random() * 5}s`;
+                    container.appendChild(node);
+                    nodes.push(node);
+                }
+                
+                // Create connections
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        // Only connect nearby nodes
+                        const rect1 = nodes[i].getBoundingClientRect();
+                        const rect2 = nodes[j].getBoundingClientRect();
+                        const distance = Math.sqrt(
+                            Math.pow(rect1.left - rect2.left, 2) + 
+                            Math.pow(rect1.top - rect2.top, 2)
+                        );
+                        
+                        if (distance < 200) {
+                            const connection = document.createElement('div');
+                            connection.className = 'nn-connection';
+                            connection.style.left = `${rect1.left + rect1.width/2}px`;
+                            connection.style.top = `${rect1.top + rect1.height/2}px`;
+                            connection.style.width = `${distance}px`;
+                            
+                            // Calculate angle
+                            const angle = Math.atan2(
+                                rect2.top - rect1.top,
+                                rect2.left - rect1.left
+                            ) * 180 / Math.PI;
+                            
+                            connection.style.transform = `rotate(${angle}deg)`;
+                            container.appendChild(connection);
+                        }
+                    }
+                }
+            }
+            
+            // Initialize neural network
+            createNeuralNetwork();
+            
+            // Recreate on resize
+            window.addEventListener('resize', createNeuralNetwork);
+        });
+    </script>
+    
+    <!-- Register Service Worker for PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

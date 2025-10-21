@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#0a0a1a"/>
+  
+  <!-- Brain shape -->
+  <path d="M256 128C180 128 128 180 128 256C128 332 180 384 256 384C332 384 384 332 384 256C384 180 332 128 256 128Z" 
+        fill="none" stroke="#00f3ff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Neural connections -->
+  <path d="M192 192L224 224" fill="none" stroke="#00f3ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M224 224L288 160" fill="none" stroke="#00f3ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M288 160L320 192" fill="none" stroke="#00f3ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M192 320L224 288" fill="none" stroke="#00f3ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M224 288L288 352" fill="none" stroke="#00f3ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M288 352L320 320" fill="none" stroke="#00f3ff" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Central core -->
+  <circle cx="256" cy="256" r="32" fill="#8a2be2"/>
+  <circle cx="256" cy="256" r="16" fill="#00f3ff"/>
+  
+  <!-- Glow effect -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+</svg>
